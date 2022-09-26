@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
@@ -25,7 +25,7 @@ const Header = () => {
                 <Link to="/contact">Contact</Link>
             </nav>
         </article>
-        <MobileNav ref={mobile}/>
+        <MobileNav mobile={mobile}/>
         </>
     )
 }

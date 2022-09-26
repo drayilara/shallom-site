@@ -4,9 +4,9 @@ import logo from "./images/logo.png";
 import facebook from "./images/facebook.png";
 import instagram from "./images/instagram.png";
 import chat from "./images/chat.png";
-import playground from "./images/playground.png";
-import swimming from "./images/swimming.png";
-import hall from "./images/hall.png";
+import park from "./images/park.jpg";
+import swimming from "./images/swimming.jpg";
+import playground from "./images/playground.jpg";
 
 
 // Footer data
@@ -18,7 +18,7 @@ const contact = {
         pin : pin,
         alt : "Location",
         pin_desc : "Address",
-        desc : "Lorem location",
+        desc : "Shallom parks and events, Alimosho general hospital, Ikotun road, Lagos.",
         href : "#"
        },
 
@@ -44,9 +44,9 @@ const socials = {
     brand : { src : logo, alt : "Logo" },
     heading : "Follow us",
     social_icons : [
-        {src : facebook, link : "#", alt : "Facebook"}, 
+        {src : facebook, link : "https://web.facebook.com/profile.php?id=100069241096184", alt : "Facebook"}, 
         {src : instagram, link : "#", alt : "Instagram"}, 
-        {src : chat, link : "#", alt : "Chat"}
+        {src : chat, link : "https://api.whatsapp.com/send?phone=+2348171896578&text=Hi%20I%20am%20sending%20this%20message%20from%20your%20website.%20I%20would%20like%20to%20make%20an%20enquiry.", alt : "Chat"}
     ]
 }
 
@@ -56,24 +56,24 @@ const explore = [
         src : swimming,
         alt : "swimming",
         heading : "Swimming Pool",
-        desc : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"
+        desc : "Our pool is clean and clear. Actively chlorinated and gentle on the body. Fit for adults and children. Come swim with us!"
 
     },
 
     {
         id : 2,
-        src : playground,
+        src : park,
         alt : "playground",
         heading : "Playground",
-        desc : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"
+        desc : "A bouncing castle in the center of our green park. Its sure to keep the kids bouncing and happy."
     },
 
     {
         id : 3,
-        src : hall,
+        src : playground,
         alt : "hall",
         heading : "Event hall",
-        desc : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution"
+        desc : "Joyous rides, happy faces, big smiles. That's all we see everyday on our frictionless carousel."
     }
 ]
 

@@ -1,10 +1,9 @@
-import React, { useEffect, useRef } from "react";
-import { Loader } from '@googlemaps/js-api-loader';
+import React, { useRef } from "react";
 import chat_icon from "../images/chat-icon.png"
 import call_icon from "../images/call-icon.png";
 import { GrClose } from "react-icons/gr";
 import { AiFillThunderbolt } from "react-icons/ai";
-
+import Footer from "./Footer";
 
 
 const Map = () => {
@@ -71,9 +70,11 @@ const Map = () => {
             <button 
             className="map_btn"
             onClick={openSlider}
-            ><AiFillThunderbolt /> Contact us fast!</button>
+            ><AiFillThunderbolt /> Contact us fast!
+            </button>
             </div>
             </div>
+            <Footer />
 
             <div className="map_contact" ref={slider}>
 
@@ -86,15 +87,15 @@ const Map = () => {
                 
                 <div className="map_whatsapp">
 
-                    <a className="map_contact-link animate__animated animate__pulse animate__infinite" href="https://api.whatsapp.com/send?phone=+2349052403088&text=Hi%20I%20am%20sending%20this%20message%20from%20your%20website.%20I%20would%20like%20to%20make%20an%20enquiry."><img src={chat_icon} alt="chat-icon" className="map_icon" /></a>
-                    <a href="https://api.whatsapp.com/send?phone=+2349052403088&text=Hi%20I%20am%20sending%20this%20message%20from%20your%20website.%20I%20would%20like%20to%20make%20an%20enquiry."><p className="map_icon_text">Whatsapp</p></a>
+                    <a className="map_contact-link animate__animated animate__pulse animate__infinite" href="https://api.whatsapp.com/send?phone=+2348171896578&text=Hi%20I%20am%20sending%20this%20message%20from%20your%20website.%20I%20would%20like%20to%20make%20an%20enquiry."><img src={chat_icon} alt="chat-icon" className="map_icon" /></a>
+                    <a href="https://api.whatsapp.com/send?phone=+2348171896578&text=Hi%20I%20am%20sending%20this%20message%20from%20your%20website.%20I%20would%20like%20to%20make%20an%20enquiry."><p className="map_icon_text">Whatsapp</p></a>
 
                 </div>
 
                 <div className="map_phone_number">
 
                     <a className="map_contact-link map_contact-link animate__animated animate__pulse animate__infinite" href="tel:+234-905-2403-088"><img src={call_icon} alt="call-icon" className="map_icon animate__animated animate__flash animate__repeat__infinite" /></a>
-                    <a href="tel:+234-905-2403-088"><p className="map_icon_text">Place call</p></a>
+                    <a href="tel:+234-817-1896-578"><p className="map_icon_text">Place call</p></a>
 
                 </div>
             </div>

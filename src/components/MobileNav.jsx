@@ -1,15 +1,20 @@
 import { Link } from "react-router-dom";
-import logo from "../images/logo.png"
+import React from "react";
 
+const MobileNav = ({mobile}) => {
 
-const MobileNav = () => {
+    React.useEffect(
+        () => {
+            mobile.current.classList.add("show-mobile-menu");
+        }
+    , [])
 
     return(
-        <div className="mobile-nav">
+        <div className="mobile-nav" ref={mobile}>
             <ul className="mobile-nav-links">
                 <Link to="/" className="mobile-nav-item">Home</Link>
-                <Link to="/contact" className="mobile-nav-item">Explore</Link>
-                <Link to="/explore" className="mobile-nav-item">Contact Us</Link>
+                <Link to="/explore" className="mobile-nav-item">Explore</Link>
+                <Link to="/contact" className="mobile-nav-item">Contact Us</Link>
             </ul>
         </div>
     )

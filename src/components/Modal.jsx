@@ -24,7 +24,13 @@ const Modal = ({ id }) => {
                                     <p>{currentModalItem.desc}</p>
                                 </div>
                                 <div className="modal-footer custom-modal-footer">
-                                    <button type="button" className="btn btn-lg btn-secondary booking-btn">Book</button>
+                                <a href="https://api.whatsapp.com/send?phone=+2348171896578&text=Hi%20I%20am%20sending%20this%20message%20from%20your%20website.%20I%20would%20like%20to%20make%20an%20enquiry.">
+
+                                    <button type="button" className="btn btn-lg btn-secondary booking-btn">
+                                    Book
+                                    </button>
+
+                                </a>
                                 </div>
                                 </div>
                             </div>
