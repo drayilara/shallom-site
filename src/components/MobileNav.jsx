@@ -7,7 +7,7 @@ const MobileNav = ({mobile}) => {
         () => {
             mobile.current.classList.add("show-mobile-menu");
         }
-    , [])
+    , [mobile])
 
     return(
         <div className="mobile-nav" ref={mobile}>
