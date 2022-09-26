@@ -19,15 +19,15 @@ const contact = {
         alt : "Location",
         pin_desc : "Address",
         desc : "Shallom parks and events, Alimosho general hospital, Ikotun road, Lagos.",
-        href : "#"
+        href : ""
        },
 
        {
         pin : mail,
         alt : "Mail",
         pin_desc : "Email",
-        desc : "Lorem mail",
-        href : "mailto:ayilarasodiq1@gmail.com"
+        desc : "Send us a mail",
+        href : "mailto:adukeakinlawon@gmail.com"
        }
     ]
 }

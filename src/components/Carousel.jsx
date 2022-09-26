@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { explore } from "../data";
-import {v4 as key } from "uuid";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
 import { FcNext } from "react-icons/fc";

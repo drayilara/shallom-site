@@ -8,6 +8,7 @@ const Contact = () => {
         <>
             <Header />
             <Map />
+            <Footer />
         </>
     )
 }
