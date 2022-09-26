@@ -1,0 +1,380 @@
+
+:root {
+  --primary-brand-bg : rgba(204, 88, 3, 1);
+}
+
+* {
+  box-sizing : border-box;
+}
+
+body {
+  margin : 0;
+  padding : 0;
+}
+
+/* Map styles */
+
+#map {
+  height : 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  background-image: url("./images/langing-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+}
+
+#map > div {
+  text-align : center;
+}
+
+.map_btn {
+  background-color: var(--primary-brand-bg);
+  color: white;
+  border : 1px solid var(--primary-brand-bg);
+  border-radius: 5px;
+  padding : 20px;
+  transition: all 0.3s linear;
+  margin: 0;
+}
+
+.map_btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.map_contact {
+  width : 100vw;
+  height : 100vh;
+  background-color: white;
+  position : absolute;
+  top : 0;
+  left : 0;
+  padding : 35px;
+  transform: translateY(-100%);
+  transition: all linear .3s;
+}
+
+.map_contact h3 {
+  text-align: left;
+}
+
+.map_icon {
+  width : 40px;
+  margin : 0;
+}
+
+.map_whatsapp, .map_phone_number {
+  display: flex;
+  flex-direction: row;
+  margin : 70px 0 70px 0
+}
+
+.map_icon_text {
+  margin-left : 20px;
+  margin-top: 10px;
+}
+
+.slider_closer {
+  position : relative;
+  left : 80%;
+  cursor : pointer;
+}
+
+.open_slider {
+  transform: translateY(0%);
+}
+
+.map_btn {
+  position : relative;
+  top : 20px;
+  left : 50px;
+  outline : var(--primary-brand-bg);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+/* Nav/Brand */
+
+.nav {
+  background-color: var(--primary-brand-bg);
+  padding : 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap : nowrap;
+}
+
+.hamburger {
+  display: none;
+}
+
+.logo-header {
+  width : 60%;
+}
+
+.heading-links {
+  display : flex;
+}
+
+.heading-links * {
+  align-self : center;
+  margin : 0 5px;
+  color : white;
+  text-decoration: none;
+}
+
+.heading-links *:hover {
+  color : white;
+}
+
+/* Footer */
+.footer-container {
+  width : 100vw;
+  height : auto;
+  position : absolute;
+  background-color: var(--primary-brand-bg);
+  color : white;
+  padding : 50px;
+  font-size: 10px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+footer {
+  width : 100%;
+  height : 100%;
+  display: flex;
+  flex-direction: row;
+  padding : 30px;
+}
+
+.footer-brand {
+  width : 100px;
+  padding-bottom: 10px;
+}
+
+.footer-heading {
+  text-decoration: underline;
+}
+
+.footer-contact, .footer-services, .footer-social-links {
+  width : 33.3%;
+}
+
+.contact-icon-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-icon {
+  height : 2%;
+}
+
+.contact-text {
+  margin-left : 10px;
+  margin-top: 5px;
+  color : white;
+  text-decoration: none;
+}
+
+.contact-text:hover {
+  color : white;
+}
+
+.social-links-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-divider {
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-color: white;
+}
+
+.copyright {
+  text-align: center;
+  padding-top : 15px;
+}
+
+/* Swiper styles */
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+}
+
+.swiper-slide img {
+  display: block;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.swiper-slide {
+  width: 40%;
+  z-index : 1;
+}
+
+/* Modal */
+
+.modal-img {
+  margin : 30px 0 30px 0;
+  padding : 0;
+  object-fit: contain;
+}
+
+.booking-btn, .booking-btn:hover {
+  background-color: var(--primary-brand-bg);
+}
+
+.custom-modal-header {
+  padding-bottom : 5px;
+}
+
+.custom-modal-footer {
+  margin-bottom : 15px;
+  justify-content: flex-start;
+}
+
+/* CTA and Explore*/
+
+.cta-container, .explore-container {
+  height : 500px;
+  background-image: url("./images/langing-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+}
+
+
+.cta-heading, .explore-container > h1, h6 {
+  margin: 0 auto;
+  text-align: center;
+  width : 50%;
+  padding-bottom : 5%;
+  padding-top : 5%;
+  color: black;
+}
+
+.cta-offers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cta-dot {
+  margin-top: 5px;
+}
+
+.cta-btns {
+  text-align: center;
+  padding: 5% 0;
+}
+
+.cta-btn {
+  margin : 0 15px;
+  background-color: var(--primary-brand-bg);
+  border : 1px;
+  border-radius : 5px;
+  color: white;
+  padding : 10px;
+}
+
+
+/* Phone screen */
+
+@media only screen and (max-width: 520px) {
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-container div {
+    padding : 0;
+    margin : 0 auto;
+    width : 100%;
+  }
+
+  .footer-container {
+    padding : 0px;
+  }
+
+  .cta-heading {
+    width : 80%;
+  }
+
+  .cta-offers {
+    width : 80%;
+    margin : 0 auto;
+  }  
+}
+
+/* Fix navbar on mobile */
+
+@media only screen and (max-width : 460px) {
+  .heading-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position : relative;
+    top : 5px;
+    color : white;
+    font-size : 2rem;
+    cursor: pointer;
+  }
+}
+
+/* Mobile Nav */
+
+.mobile-nav {
+  width : 100%;
+  height : 30%;
+  display: none;
+  background-color: var(--primary-brand-bg);
+  translate: tran;
+  transition : all linear 0.3s
+}
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.mobile-nav-logo {
+  width : 15%;
+  
+}
+
+.mobile-nav-item {
+  color : white;
+  text-decoration: none;
+  /* margin : 5px 0 */
+}
+
+.mobile-nav-item:hover {
+  color : white;
+}
