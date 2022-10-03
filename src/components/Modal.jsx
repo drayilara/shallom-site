@@ -10,7 +10,7 @@ const Modal = ({ id }) => {
     return (
         <>
             <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div className="modal-dialog modal-dialog-centered">
+                <div className="modal-dialog modal-xl modal-dialog-centered">
                     <div className="modal-content custom-modal-content">
                         <div className="container-fluid">
                             <div className="row">

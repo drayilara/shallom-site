@@ -18,7 +18,7 @@ const contact = {
         pin : pin,
         alt : "Location",
         pin_desc : "Address",
-        desc : "Shallom parks and events, Alimosho general hospital, Ikotun road, Lagos.",
+        desc : "Alimosho general hospital, Ikotun road, Lagos.",
         href : ""
        },
 

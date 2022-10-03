@@ -15,7 +15,7 @@ body {
 /* Map styles */
 
 #map {
-  height : 300px;
+  height : 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,6 +38,7 @@ body {
   border-radius: 5px;
   padding : 20px;
   transition: all 0.3s linear;
+  font-size: 30px;
 }
 
 .map_btn:hover {
@@ -46,7 +47,7 @@ body {
 
 .map_contact {
   width : 100vw;
-  height : 100vh;
+  height : 120vh;
   background-color: white;
   position : absolute;
   top : 0;
@@ -110,7 +111,7 @@ body {
 }
 
 .logo-header {
-  width : 60%;
+  width : 150%;
 }
 
 .heading-links {
@@ -119,9 +120,10 @@ body {
 
 .heading-links * {
   align-self : center;
-  margin : 0 5px;
+  margin : 0 10px;
   color : white;
   text-decoration: none;
+  font-size : 30px;
 }
 
 .heading-links *:hover {
@@ -148,6 +150,7 @@ footer {
   display: flex;
   flex-direction: row;
   padding : 30px;
+  font-size : 15px;
 }
 
 .footer-brand {
@@ -157,6 +160,7 @@ footer {
 
 .footer-heading {
   text-decoration: underline;
+  font-size: 30px;
 }
 
 .footer-contact, .footer-services, .footer-social-links {
@@ -197,6 +201,7 @@ footer {
 .copyright {
   text-align: center;
   padding-top : 15px;
+  font-size: 15px;
 }
 
 /* Swiper styles */
@@ -229,6 +234,7 @@ footer {
   height: 80%;
   object-fit: cover;
   cursor: pointer;
+  border : 10px solid var(--primary-brand-bg);
 }
 
 .swiper-slide {
@@ -260,7 +266,7 @@ footer {
 /* CTA and Explore*/
 
 .cta-container, .explore-container {
-  height : 500px;
+  height : 900px;
   background-image: url("./images/landing-bg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -278,14 +284,27 @@ footer {
   color: black;
 }
 
-.show-more {
-  margin: 0 auto;
+.cta-heading, .explore-container > h1 {
+  font-size : 60px;
 }
+
+.explore-container > h6 {
+  font-size : 30px;
+}
+
+
+/* .show-more {
+  margin: 0 auto;
+} */
 
 .cta-offers {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.cta-offers * {
+  font-size : 30px;
 }
 
 .cta-dot {
@@ -304,6 +323,7 @@ footer {
   border-radius : 5px;
   color: white;
   padding : 10px;
+  font-size : 30px;
 }
 
 
@@ -334,9 +354,18 @@ footer {
   }  
 }
 
+/* Fix swiper size on tablet and phone */
+
+@media only screen and (max-width : 850px) {
+  .swiper-slide {
+    width : 100%;
+  }
+}
+
+
 /* Fix navbar on mobile */
 
-@media only screen and (max-width : 460px) {
+@media only screen and (max-width : 850px) {
   .heading-links {
     display: none;
   }
@@ -344,9 +373,9 @@ footer {
   .hamburger {
     display: block;
     position : relative;
-    top : 5px;
+    top : 25px;
     color : white;
-    font-size : 2rem;
+    font-size : 3rem;
     cursor: pointer;
   }
 }
@@ -364,6 +393,7 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-size : 20px;
 }
 
 .mobile-nav-logo {
